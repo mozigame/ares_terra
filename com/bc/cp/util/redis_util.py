@@ -1,5 +1,3 @@
-
-
 import os
 import sys
 import time
@@ -60,15 +58,16 @@ def exe_pipeline_del_redis_keys(match_key):
     pipe = redis_obj.pipeline()
     keys = redis_obj.keys(match_key)
     start_time = time.time()
-    print('keys len is : ',len(keys))
+    print('keys len is : ', len(keys))
     for i in range(len(keys)):
         pipe.delete(keys[i])
         if i % 200 == 0:
-                pipe.execute()
-                print('expend time : ', time.time() - start_time, i)
+            pipe.execute()
+            print('expend time : ', time.time() - start_time, i)
     for i in range(len(keys)):
         pipe.delete(keys[i])
     pipe.execute()
+
 
 def exe_keys(match_key):
     redis_obj = get_cluster_conn()
@@ -78,5 +77,5 @@ def exe_keys(match_key):
         print(key)
     print('keys size : ', len(keys))
 
-print(os.getcwd())
 
+print(os.getcwd())
