@@ -1,6 +1,9 @@
 import requests
 import json
+import threading
+from time import sleep
 from hermes.config import *
+import time
 
 Authorization = 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTYyODM4OTQsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI0ZDMzYmQ0MC0zNmNjLTQ1MWYtOWJjMi04YTNmM2MyZTM5ZTkiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.cAJ9cEhwxaMiM5rF0JR3xQ0O-YhitaHC2MKdsnQ5MBNnoy8cHvQGQbYSf7FQO14CdU-4d6oipZrB1gD8PLiZSZ92bUfRr8TFx2VXZh5CdeC9chn9xBxwbm2QHxGnjL6iiNPLQMrJPpCM-iXijhUJxSn62PXgTt384P15BaSqlcLsLb0v71sGuzmgGIixyRzA0PA9P8zj3W44fRZ-PqM97OnsmD2U2KFC_POQCHQHz-WU2wWVnrfljtzIZTB-wRxMHd0KJy8dXReeiGKbPi66jS9T-__ls9vZgB8wJobtmjTsbFQ_f4zcp1VYX5aeVGJ1tPSASUFIlvZhEwzgVFUgow'
 
@@ -50,7 +53,23 @@ def month_bill_detail():
 def stat_list():
     pc = PathConfig(path_name='stat_list')
     params = pc.get_param()
+    data = {params[0]: 44}
+    return RequestServer(pc, data).request()
+
+
+# 退佣当期报表
+def current_pcode_summary():
+    pc = PathConfig(path_name='current_pcode_summary')
+    params = pc.get_param()
     data = {}
+    return RequestServer(pc, data).request()
+
+
+# 退佣状态修改
+def update_status():
+    pc = PathConfig(path_name='update_status')
+    params = pc.get_param()
+    data = {params[0]: 2018013176, params[1]: 2}
     return RequestServer(pc, data).request()
 
 
@@ -64,6 +83,10 @@ if __name__ == '__main__':
     # 代理月结账单详情，代理显示
     # result = month_bill_detail()
     # 代理退佣统计
-    result = stat_list()
-    print(result.json())
+    # result = stat_list()
+    # 资金管理，退佣当期报表
+    # result = current_pcode_summary()
+    # 退佣状态修改
+    result = update_status()
+    # print(result.json())
     print(result.text)
