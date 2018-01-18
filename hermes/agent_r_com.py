@@ -46,6 +46,14 @@ def month_bill_detail():
     return RequestServer(pc, data).request()
 
 
+# 代理退佣统计
+def stat_list():
+    pc = PathConfig(path_name='stat_list')
+    params = pc.get_param()
+    data = {}
+    return RequestServer(pc, data).request()
+
+
 if __name__ == '__main__':
     # token = PathConfig().get_token(requests)
     # print('Bearer',token)
@@ -54,6 +62,8 @@ if __name__ == '__main__':
     # 代理月结账单列表，代理显示
     # result = month_bill_list()
     # 代理月结账单详情，代理显示
-    result = month_bill_detail()
+    # result = month_bill_detail()
+    # 代理退佣统计
+    result = stat_list()
     print(result.json())
     print(result.text)

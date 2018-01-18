@@ -1,4 +1,5 @@
-host = 'http://localhost:8083'
+# host = 'http://localhost:8083'
+host = 'http://192.168.1.109:8083'
 test_host = 'http://192.168.0.223:8083'
 prod_host = 'http://10.1.10.82:8083'
 
@@ -8,7 +9,9 @@ path = {
     'month_bill_list': ['/apis/plat/agent/r_com/month_bill_list', ('year', 'rows', 'page'), 'get', '代理月结账单，代理显示',
                         'AgentRComResource.queryAgentMonthBillList'],
     'month_bill_detail': ['/apis/plat/agent/r_com/month_bill_detail', ('rComPcodeId',), 'get', '代理月结账单，退佣详情',
-                        'AgentRComResource.queryAgentMonthBillDetail'],
+                          'AgentRComResource.queryAgentMonthBillDetail'],
+    'stat_list': ['/apis/plat/agent/r_com/stat_list', ('agentName', 'pcode', 'rComJudge', 'rComStatus', 'rows', 'page'),
+                  'get', '代理退佣统计', 'AgentRComResource'],
 }
 
 
