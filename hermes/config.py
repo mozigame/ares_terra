@@ -1,8 +1,3 @@
-host = 'http://localhost:8083'
-# host = 'http://192.168.1.109:8083'
-test_host = 'http://192.168.0.223:8083'
-prod_host = 'http://10.1.10.82:8083'
-
 path = {
     'agent_r_com_day_stat': ['/apis/internal/test/agent_r_com_day_stat', ('startTime', 'endTime'), 'post', '每日退佣统计',
                              'InternalCommandResource.agentRComDayStat'],
@@ -20,15 +15,23 @@ path = {
 }
 
 
+class Config():
+    host = 'http://localhost:8083'
+    # host = 'http://192.168.1.109:8083'
+    test_host = 'http://192.168.0.223:8083'
+    prod_host = 'http://10.1.10.82:8083'
+    env = 'local'
+
+
 class PathConfig():
-    def __init__(self, dev='local', path_name=''):
-        if dev == 'text':
-            self.host = test_host
-        elif dev == 'proc':
-            self.host = prod_host
+    def __init__(self, path_name=''):
+        if Config.env == 'test':
+            self.host = Config.test_host
+        elif Config.env == 'prod':
+            self.host = Config.prod_host
         else:
             print('--> 默认为local环境')
-            self.host = host
+            self.host = Config.host
         self.path_name = path_name
 
     def get_path(self):
