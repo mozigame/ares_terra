@@ -1,18 +1,6 @@
-path = {
-    'agent_r_com_day_stat': ['/apis/internal/test/agent_r_com_day_stat', ('startTime', 'endTime'), 'post', '每日退佣统计',
-                             'InternalCommandResource.agentRComDayStat'],
-    'month_bill_list': ['/apis/plat/agent/r_com/month_bill_list', ('year', 'rows', 'page'), 'get', '代理月结账单，代理显示',
-                        'AgentRComResource.queryAgentMonthBillList'],
-    'month_bill_detail': ['/apis/plat/agent/r_com/month_bill_detail', ('rComPcodeId',), 'get', '代理月结账单，退佣详情',
-                          'AgentRComResource.queryAgentMonthBillDetail'],
-    'stat_list': ['/apis/plat/agent/r_com/stat_list', ('pcode', 'agentName', 'rComJudge', 'rComStatus', 'rows', 'page'),
-                  'get', '代理退佣统计', 'AgentRComResource'],
-    'current_pcode_summary': ['/apis/plat/agent/r_com/current_pcode_summary',
-                              ('agentName', 'rComJudge', 'rComStatus', 'rows', 'page'),
-                              'get', '资金管理，退佣当期报表', 'AgentRComResource'],
-    'update_status': ['/apis/plat/agent/r_com/update', ('rComPcodeId', 'rComStatus'),
-                      'post', '退佣状态修改', 'AgentRComResource'],
-}
+import requests
+
+Authorization = 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY3ODU1NzcsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI2MzAyNTFkYS0zNGQ2LTRlMDAtOGE1MC1jOGZjMGM2ZTk3YzEiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.LyoNqb1s_KW8GxHfGY4PnpBwkWDWO_okWO4HPNMEoa3LuCbDcxYcUWIu-UwxS8Y_so_MmEUjL4w6EPqhz9n3CRfaaZWcnsX2Jt0KpaabSGGM4dcdCihA7u5--lEHZeW0SbBkOTryWZ22_gPQllQXHGlnXHtIwkEvY6YtFTcVmXFLFanZivq9NZ-cnHjfHNBTz_6_LkgKWLDi1QnSTeNLinIWTwJ8sX1DD3neUPohIhZ-0xb65njsOQaPeVhWSo1b6FWxWxvQl8Mm7k2EIFnu-jKDlLF-ePXJHitKhgOOeg-zLl7zkuBqOP2_2CCAK8PsgVbU-v81SL_8fYdCoowK2w'
 
 
 class Config():
@@ -24,7 +12,7 @@ class Config():
 
 
 class PathConfig():
-    def __init__(self, path_name=''):
+    def __init__(self, path_name='', path=None):
         if Config.env == 'test':
             self.host = Config.test_host
         elif Config.env == 'prod':
@@ -33,15 +21,16 @@ class PathConfig():
             print('--> 默认为local环境')
             self.host = Config.host
         self.path_name = path_name
+        self.path = path
 
     def get_path(self):
-        return self.host + path[self.path_name][0]
+        return self.host + self.path[self.path_name][0]
 
     def get_param(self):
-        return path[self.path_name][1]
+        return self.path[self.path_name][1]
 
     def get_method(self):
-        return path[self.path_name][2]
+        return self.path[self.path_name][2]
 
     def get_token(self, requests):
         login_path = 'http://121.58.234.210:19093/uaa/apid/plat/login'
@@ -50,3 +39,18 @@ class PathConfig():
                         'clientId': 'clientId'}
         req = requests.post(url=login_path, data=login_data, headers=login_header)
         return req.json()['data']['access_token']
+
+
+class RequestServer():
+    def __init__(self, pc, data):
+        self.pc = pc
+        self.data = data
+
+    def request(self):
+        headers = {'Authorization': Authorization}
+        if self.pc.get_method() == 'get':
+            return requests.get(url=self.pc.get_path(), params=self.data, headers=headers)
+        elif self.pc.get_method() == 'post':
+            return requests.post(self.pc.get_path(), data=self.data, headers=headers)
+        else:
+            Exception('未指定请求方法')
