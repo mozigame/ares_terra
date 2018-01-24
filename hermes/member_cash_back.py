@@ -27,15 +27,19 @@ def grant_balance(date):
     return RequestServer(pc, data).request()
 
 
+
+
 if __name__ == '__main__':
-    # token = PathConfig().get_token(requests)
-    # print('Bearer', token)
+    token = PathConfig().get_token(requests)
+    print('Bearer', token)
     # 每日执行一次，将每个用户每个彩种的返水统计入库
     # for i in range(1, 10):
     #     result = agent_r_com_day_stat(20180113 + i)
     #     print(result.text)
 
     # 手动执行返水，给用户金额
-    for i in range(1, 14):
-        result = grant_balance(int('%s010101' % (20180110 + i)))
-        print(result.text)
+    # for i in range(1, 14):
+    #     result = grant_balance(int('%s010101' % (20180110 + i)))
+    #     print(result.text)
+
+

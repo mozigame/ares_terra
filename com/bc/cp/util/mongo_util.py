@@ -15,4 +15,4 @@ def get_conn():
 
 
 db=get_conn()
-print(db.collection_names())
+# print(db.collection_names())
