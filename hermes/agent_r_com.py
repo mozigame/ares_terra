@@ -21,7 +21,7 @@ path = {
 def agent_r_com_day_stat():
     pc = PathConfig(path_name='agent_r_com_day_stat', path=path)
     params = pc.get_param()
-    data = {params[0]: 1515945600000, params[1]: 1517414399000}
+    data = {params[0]: 1516723200000, params[1]: 1516809599000}
     return RequestServer(pc, data).request()
 
 
@@ -66,17 +66,18 @@ def update_status():
 
 
 if __name__ == '__main__':
+    Config.env = 'local'
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
     # 代理每日退佣统计，手动执行
-    # result = agent_r_com_day_stat()
+    result = agent_r_com_day_stat()
     # 代理月结账单列表，代理显示
     # result = month_bill_list()
     # 代理月结账单详情，代理显示
     # result = month_bill_detail()
     # 代理退佣统计
-    Config.env = 'test'
-    result = stat_list()
+
+    # result = stat_list()
     # 资金管理，退佣当期报表
     # result = current_pcode_summary()
     # 退佣状态修改
