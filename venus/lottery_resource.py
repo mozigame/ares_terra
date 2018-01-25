@@ -28,7 +28,7 @@ if __name__ == '__main__':
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
 
-    result = repair_no_draw_orders(20180124095, 'luckship', 20180124, 24, 1, 200)
+    result = repair_no_draw_orders(20180123044, 'luckship', 20180123, 24, 1, 200)
     # result = repair_no_draw_orders(20180124075, 'luckship', 20180124, 24, 1, 200)
     # result = repair_no_draw_orders(20180124076, 'luckship', 20180124, 24, 1, 200)
     # result = repair_no_draw_orders(20180124052, 'luckship', 20180124, 24, 1, 200)

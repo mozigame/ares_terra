@@ -1,6 +1,6 @@
 import requests
 
-Authorization = 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY3ODU1NzcsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI2MzAyNTFkYS0zNGQ2LTRlMDAtOGE1MC1jOGZjMGM2ZTk3YzEiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.LyoNqb1s_KW8GxHfGY4PnpBwkWDWO_okWO4HPNMEoa3LuCbDcxYcUWIu-UwxS8Y_so_MmEUjL4w6EPqhz9n3CRfaaZWcnsX2Jt0KpaabSGGM4dcdCihA7u5--lEHZeW0SbBkOTryWZ22_gPQllQXHGlnXHtIwkEvY6YtFTcVmXFLFanZivq9NZ-cnHjfHNBTz_6_LkgKWLDi1QnSTeNLinIWTwJ8sX1DD3neUPohIhZ-0xb65njsOQaPeVhWSo1b6FWxWxvQl8Mm7k2EIFnu-jKDlLF-ePXJHitKhgOOeg-zLl7zkuBqOP2_2CCAK8PsgVbU-v81SL_8fYdCoowK2w'
+Authorization = 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTY5MzMzMjMsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiIwMmM2N2EzMi05NWVlLTRhNTctYTgxNi1lMGUyMjYyMzMyM2IiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.FzhsWg_KKc9IuIPXRVRQUQ7bR10CnLI9ljYRe-mh0jOzxiDeGGFTqzEojqPqXkFQ8D9B0W-nLtgyFxSwnMl5mDzekmXuUaqG2ADJEhN08UYXnYmA7Xm3GbuBsFjE8tLrTRDjsrTVahc35fnaRRlwm1eoUWuV45o6yOe_byXnqWnjL4yY2AwEdpvO9QGBiwGKjZCPoUHZb0lbxY3vzLGy0Obn0qd2D5FRQOXBLpvyrkq2habnHxiBBt03DlH6ot0pQ6PQF2V-j21Ff_4L8fnVa_6xcxYOVGhs49FYmD_pkdO3dovH_4wU7Qj-1oPGLPyuBA6nOUnmrJHVqN988jO4WA'
 
 
 class Config():
@@ -8,7 +8,7 @@ class Config():
     # host = 'http://192.168.1.109:8083'
     test_host = 'http://192.168.0.223:8083'
     prod_host = 'http://10.1.10.82:8083'
-    env = 'local'
+    env = 'test'
 
 
 class PathConfig():
@@ -32,7 +32,7 @@ class PathConfig():
     def get_method(self):
         return self.path[self.path_name][2]
 
-    def get_token(self, requests):
+    def get_token(self):
         login_path = 'http://121.58.234.210:19093/uaa/apid/plat/login'
         login_data = {'grant_type': 'password', 'username': 'test2', 'password': '123qwe', 'code': '000000'}
         login_header = {'Origin': 'http://pt2.bccp.co:19091', 'Authorization': 'Basic d2ViX2FwcDo=',
