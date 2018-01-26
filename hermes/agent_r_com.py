@@ -1,7 +1,9 @@
 from hermes.config import *
+from utils.request_util import *
 
 path = {
-    'agent_r_com_day_stat': ['/apis/internal/test/agent_r_com_day_stat', ('startTime', 'endTime'), 'post', '每日退佣统计,手动执行，将代理的每日的退佣入库',
+    'agent_r_com_day_stat': ['/apis/internal/test/agent_r_com_day_stat', ('startTime', 'endTime'), 'post',
+                             '每日退佣统计,手动执行，将代理的每日的退佣入库',
                              'InternalCommandResource.agentRComDayStat'],
     'month_bill_list': ['/apis/plat/agent/r_com/month_bill_list', ('year', 'rows', 'page'), 'get', '代理月结账单，代理显示',
                         'AgentRComResource.queryAgentMonthBillList'],
@@ -21,7 +23,7 @@ path = {
 def agent_r_com_day_stat():
     pc = PathConfig(path_name='agent_r_com_day_stat', path=path)
     params = pc.get_param()
-    data = {params[0]: 1516723200000, params[1]: 1516809599000}
+    data = {params[0]: 1516809600000, params[1]: 1516895999000}
     return RequestServer(pc, data).request()
 
 
@@ -30,7 +32,8 @@ def month_bill_list():
     pc = PathConfig(path_name='month_bill_list', path=path)
     params = pc.get_param()
     data = {params[0]: 2018}
-    return RequestServer(pc, data).request()
+    headers = {"Origin": "http://121.58.234.210:19091"}
+    return RequestServer(pc, data).request(headers)
 
 
 # 代理月结账单，退佣详情
@@ -45,7 +48,7 @@ def month_bill_detail():
 def stat_list():
     pc = PathConfig(path_name='stat_list', path=path)
     params = pc.get_param()
-    data = {params[0]: 44}
+    data = {params[0]: 49}
     return RequestServer(pc, data).request()
 
 
@@ -66,13 +69,13 @@ def update_status():
 
 
 if __name__ == '__main__':
-    Config.env = 'local'
-    # token = PathConfig().get_token(requests)
+    # Config.env = 'local'
+    # token = PathConfig().get_token()
     # print('Bearer', token)
     # 代理每日退佣统计，手动执行
-    result = agent_r_com_day_stat()
+    # result = agent_r_com_day_stat()
     # 代理月结账单列表，代理显示
-    # result = month_bill_list()
+    result = month_bill_list()
     # 代理月结账单详情，代理显示
     # result = month_bill_detail()
     # 代理退佣统计

@@ -1,4 +1,5 @@
 from hermes.config import *
+from utils.request_util import *
 
 path = {
     'agent_r_com_day_stat': ['/apis/internal/test/mem_cash_back/detail_to_cash_day', ('pdate',), 'post',

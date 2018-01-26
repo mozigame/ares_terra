@@ -8,6 +8,8 @@ path = {
     'statistics_mem': ['/apis/platinfo/mem_cash_back/statistics_mem',
                        ('memberId', 'agentId', 'cashBackId', 'startTime', 'endTime', 'lotteryIds',
                         'page', 'size'), 'get', '会员返水统计会员部分', 'MemCashBackDayResource'],
+    'details': ['/apis/platinfo/mem_cash_back/details',
+                ('account', 'type', 'levelIds', 'page', 'rows',), 'get', '会员返水管理返水明细', 'MemCashBackDayResource'],
 }
 
 
@@ -32,12 +34,24 @@ def statistics_mem(account=None, type=None, level_ids=None, cash_back_id=None, s
     return RequestServer(pc, data).request()
 
 
+# 会员返水管理返水明细
+def details(account=None, type=None, level_ids=None, page=1, size=30):
+    pc = PathConfig(path_name='details', path=path)
+    params = pc.get_param()
+    data = {params[0]: account, params[1]: type, params[2]: level_ids, params[3]: page, params[4]: size}
+    return RequestServer(pc, data).request()
+
+
 if __name__ == '__main__':
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
 
-    # result = record(start_time=1516723200000, end_time=1516809600000, lottery_ids='2')
+    # 会员返水记录
+    # result = record(start_time=1516809600000, end_time=1516895999000, type=1, account='Ctuiyong02')
     # print(result.text)
-
-    result = statistics_mem(start_time=1516723200000, end_time=1516809600000, lottery_ids='2')
+    # 会员返水管理返水明细
+    result = details(account='tuiyongA', type=2)
     print(result.text)
+
+    # result = statistics_mem(start_time=1516723200000, end_time=1516809600000, lottery_ids='2')
+    # print(result.text)
