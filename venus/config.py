@@ -1,14 +1,6 @@
-path = {
-    'add': ['/api/user/add', ('id', 'name', 'age', 'address', 'create_time'), 'post', '添加数据', 'UserResource'],
-    'get_by_id': ['/api/user/get', ('id',), 'get', '根据id获取', 'UserResource'],
-    'update': ['/api/user/update', ('id', 'name', 'age', 'address'), 'post', '修改数据', 'UserResource'],
-    'query_list': ['/api/user/query_list', ('id', 'name', 'age', 'address', 'page', 'rows'), 'get', '查询列表',
-                   'UserResource'],
-}
-
 
 class Config():
-    host = 'http://localhost:8081'
+    host = 'http://localhost:8082'
     # host = 'http://192.168.1.109:8083'
     test_host = 'http://192.168.0.223:8082'
     prod_host = 'http://10.1.10.82:8083'

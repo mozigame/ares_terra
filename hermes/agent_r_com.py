@@ -86,6 +86,24 @@ if __name__ == '__main__':
                                   datetime_timestamp('2018-01-23 23:59:59') * 1000)
     result = agent_r_com_day_stat(datetime_timestamp('2018-01-24 00:00:00') * 1000,
                                   datetime_timestamp('2018-01-24 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-25 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-25 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-26 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-26 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-27 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-27 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-28 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-28 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-29 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-29 23:59:59') * 1000)
+
+    #
+    # result = agent_r_com_day_stat(datetime_timestamp('2018-01-23 00:00:00') * 1000,
+    #                               datetime_timestamp('2018-01-23 23:59:59') * 1000)
+    # result = agent_r_com_day_stat(datetime_timestamp('2018-01-24 00:00:00') * 1000,
+    #                               datetime_timestamp('2018-01-24 23:59:59') * 1000)
+
+
     # 代理月结账单列表，代理显示
     # result = month_bill_list()
     # 代理月结账单详情，代理显示

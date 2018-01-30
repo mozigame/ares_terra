@@ -31,8 +31,8 @@ def update(id, name, age, address):
 
 
 # 根据id获取用户信息
-def get_by_id(id, path=path):
-    pc = PathConfig(path_name='get_by_id')
+def get_by_id(id):
+    pc = PathConfig(path_name='get_by_id', path=path)
     params = pc.get_param()
     data = {params[0]: id}
     return RequestServer(pc, data).request()
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     # print(result.json())
     # 添加用户信息
     # for i in range(3, 20):
-    result = add(1)
+    result = add('id_%s' % 1)
     #     print(result.text)
     #     sleep(0.1)
 

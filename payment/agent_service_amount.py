@@ -36,10 +36,10 @@ if __name__ == '__main__':
     # result = record(start_time=1516723200000, end_time=1516809600000, lottery_ids='2')
     # print(result.text)
     Config.env = 'test'
-    discount_result = discount_stat(plat_info_id=38, agent_id_list=[2400], start_time=1516809600000,
-                                    end_time=1516895999000)
-    print(discount_result.text)
+    # discount_result = discount_stat(plat_info_id=38, agent_id_list=[2400], start_time=1516809600000,
+    #                                 end_time=1516895999000)
+    # print(discount_result.text)
 
-    result = service_stat(plat_info_id=38, agent_id_list=[2400], start_time=1516809600000,
-                          end_time=1516895999000)
+    result = service_stat(plat_info_id=38, agent_id_list=[2400], start_time=datetime_timestamp('2018-01-25 00:00:00') * 1000,
+                          end_time=datetime_timestamp('2018-01-29 23:59:59') * 1000)
     print(result.text)

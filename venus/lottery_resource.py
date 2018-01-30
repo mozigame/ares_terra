@@ -24,8 +24,10 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
 # 16： gd_11x5
 # 2 : cq_ssc
 # 24 : luckship
+# 10 : xg_lhc
 if __name__ == '__main__':
+    Config.env='local'
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
-    result = repair_no_draw_orders(20180125001, 'luckship', 20180125, 24, 1, 200)
+    result = repair_no_draw_orders(2018112, 'xg_lhc', 201804, 10, 1, 200)
     print(result.text)
