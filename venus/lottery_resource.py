@@ -27,10 +27,5 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
 if __name__ == '__main__':
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
-
     result = repair_no_draw_orders(20180125001, 'luckship', 20180125, 24, 1, 200)
-    # result = repair_no_draw_orders(20180124075, 'luckship', 20180124, 24, 1, 200)
-    # result = repair_no_draw_orders(20180124076, 'luckship', 20180124, 24, 1, 200)
-    # result = repair_no_draw_orders(20180124052, 'luckship', 20180124, 24, 1, 200)
-    # result = repair_no_draw_orders(20180124052, 'luckship', 20180124, 24, 1, 200)
     print(result.text)

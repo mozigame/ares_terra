@@ -20,10 +20,10 @@ path = {
 
 
 # 每日退佣统计，手动执行
-def agent_r_com_day_stat():
+def agent_r_com_day_stat(startTime, endTime):
     pc = PathConfig(path_name='agent_r_com_day_stat', path=path)
     params = pc.get_param()
-    data = {params[0]: 1516809600000, params[1]: 1516895999000}
+    data = {params[0]: startTime, params[1]: endTime}
     return RequestServer(pc, data).request()
 
 
@@ -64,7 +64,7 @@ def current_pcode_summary():
 def update_status():
     pc = PathConfig(path_name='update_status', path=path)
     params = pc.get_param()
-    data = {params[0]: 2018013176, params[1]: 2}
+    data = {params[0]: 20180125334, params[1]: 3}
     return RequestServer(pc, data).request()
 
 
@@ -73,9 +73,21 @@ if __name__ == '__main__':
     # token = PathConfig().get_token()
     # print('Bearer', token)
     # 代理每日退佣统计，手动执行
-    # result = agent_r_com_day_stat()
+
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-19 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-19 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-20 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-20 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-21 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-21 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-22 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-22 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-23 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-23 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-24 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-24 23:59:59') * 1000)
     # 代理月结账单列表，代理显示
-    result = month_bill_list()
+    # result = month_bill_list()
     # 代理月结账单详情，代理显示
     # result = month_bill_detail()
     # 代理退佣统计

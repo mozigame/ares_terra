@@ -9,15 +9,18 @@ class Config():
     # host = 'http://192.168.1.109:8083'
     test_host = 'http://192.168.0.225:9999'
     # test_host = 'http://192.168.0.217:9999'
-    prod_host = 'http://10.1.10.82:8083'
-    env = 'test'
+    prod_host = 'http://10.1.10.81:9999'
+    LOCAL = 'local'
+    TEST = 'test'
+    PROD = 'proc'
+    env = TEST
 
 
 class PathConfig():
     def __init__(self, path_name='', path=None):
-        if Config.env == 'test':
+        if Config.env == Config.TEST:
             self.host = Config.test_host
-        elif Config.env == 'prod':
+        elif Config.env == Config.PROD:
             self.host = Config.prod_host
         else:
             print('--> 默认为local环境')
@@ -52,6 +55,5 @@ class PathConfig():
         req = requests.post(url=login_path, data=login_data, headers=login_header)
         print(req.text)
         return req.json()['data']['access_token']
-
 
 # print('Bearer', PathConfig().get_agent_token())
