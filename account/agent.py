@@ -9,7 +9,7 @@ path = {
 
 # 获取代理的所有配置信息
 def get_agent_info_by_id(agent_id):
-    pc = PathConfig(path_name='get_agent_info_by_id', path=path)
+    pc = PathConfig(path_name='get_agent_info_by_id', path=path, Config=Config)
     params = pc.get_param()
     data = {params[0]: agent_id}
     rs = RequestServer(pc, data)
@@ -18,6 +18,6 @@ def get_agent_info_by_id(agent_id):
 
 if __name__ == '__main__':
     # Config.env = 'local'
-    getToken('plat')
+    get_token('plat')
     result = get_agent_info_by_id(2397)
     print(result.text)

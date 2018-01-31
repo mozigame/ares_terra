@@ -25,9 +25,8 @@ class RequestServer():
             raise Exception('未指定请求方法')
         return result
 
-    # 合并功能，支持所有登入类型
 
-
+# 合并功能，支持所有登入类型
 def get_token(login_model):
     loginType = login_model
     apiRoot = configureRead.getConfig('api', 'apiRoot')
