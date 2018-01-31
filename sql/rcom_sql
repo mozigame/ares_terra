@@ -1,0 +1,81 @@
+select sum(valid_bet_amount) from lo_user_order where bet_time BETWEEN 1516809600000 and 1517241599000 and order_status in (31,32) and agent_id=2305 AND plat_info_id=38 and ac_type=1;
+
+SELECT  sum(valid_bet_amount) from lo_user_order
+        WHERE order_status in(31,32) and modify_time BETWEEN 1516809600000 and 1517241599000
+        AND ac_type = 1 and plat_info_id=38 and agent_id=2305;
+--         GROUP BY agent_id,lottery_id
+
+
+
+
+
+SELECT * from venus.lo_agent where agent_account='tuiyongC';
+
+SELECT *from lo_user_order where agent_id = 2305  and bet_time BETWEEN 1516809600000 and 1517241599000 and order_status in (31,32) AND ac_type=1
+
+SELECT *from lo_user_order WHERE pcode=2018112;
+
+
+select order_id from lo_user_order where bet_time BETWEEN 1516809600000 and 1517241599000 and order_status in (31,32) and agent_id=2305 AND plat_info_id=38 and ac_type=1;
+
+
+SELECT * from lo_user_order where order_id in (SELECT order_id from lo_user_order
+        WHERE order_status in(31,32) and bet_time BETWEEN 1516809600000 and 1517241599000
+        AND ac_type = 1 and plat_info_id=38 and agent_id=2305
+				AND order_id not in
+
+
+(SELECT * from (select order_id from lo_user_order where modify_time BETWEEN 1516809600000 and 1517241599000 and
+order_status in (31,32) and agent_id=2305 AND plat_info_id=38 and ac_type=1) s));
+
+
+SELECT *from lo_user_order where order_id in("210a20181124371g2ail","210a20181124371g2aim","210a20181124371g2ain","210a20181124371g2aio","210a20181124371g2aip","210a20181124371g2aiq","210a20181124371g2air","210a20181124371g2ais","210a20181124371g2ait","210a20181124371g2aiu")
+
+
+
+
+;
+
+
+
+SELECT sum(valid_bet_amount) from lo_agent_return_commission_day where agent_id = 2305 and pdate in (20180125,20180126,20180127,20180128,20180129) order by pdate;
+SELECT * from lo_agent_return_commission_day where agent_id = 2305 and pdate in (20180125,20180126,20180127,20180128,20180129) order by pdate;
+
+SELECT * from lo_agent_return_commission_detail where agent_id = 2305 and r_com_pcode_id=20180129545;
+SELECT * from lo_agent_return_commission_pcode where agent_id = 2305;
+
+SELECT sum(valid_bet_amount) from lo_agent_return_commission_detail where agent_id = 2305 and r_com_pcode_id=20180129545;
+
+
+
+SELECT * from lo_agent_return_commission_day where agent_id=2305;
+
+
+SELECT agent_id agentId,
+            sum(valid_bet_amount) validBetAmount,
+            SUM(payoff) payoff,
+            SUM(cash_back_amount) cashBackAmount
+        from lo_agent_return_commission_day
+        where pdate>=20180125 and pdate   <= 20180129
+        AND plat_info_id=38
+        GROUP BY agent_id,lottery_id;
+
+
+
+SELECT * from lo_agent_return_commission_day where agent_id = 2400 and pdate in (20180125,20180126,20180129);
+
+
+
+
+
+SELECT max(plat_info_id) plat_info_id, agent_id, lottery_id,sum(valid_bet_amount) valid_bet_amount,SUM(payoff) payoff, SUM(reforward_point) reforward_point from lo_user_order
+        WHERE order_status in(31,32) and modify_time BETWEEN 1516809600000 and 1517241599000
+        AND ac_type = 1 and plat_info_id=38 and agent_id=2305
+        GROUP BY agent_id,lottery_id;
+
+
+
+SELECT  sum(valid_bet_amount) from lo_user_order
+        WHERE order_status in(31,32) and modify_time BETWEEN 1516809600000 and 1517241599000
+        AND ac_type = 1 and plat_info_id=38 and agent_id=2305
+        GROUP BY agent_id,lottery_id

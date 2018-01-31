@@ -12,10 +12,12 @@ def get_agent_info_by_id(agent_id):
     pc = PathConfig(path_name='get_agent_info_by_id', path=path)
     params = pc.get_param()
     data = {params[0]: agent_id}
+    rs = RequestServer(pc, data)
     return RequestServer(pc, data).request()
 
 
 if __name__ == '__main__':
     # Config.env = 'local'
+    getToken('plat')
     result = get_agent_info_by_id(2397)
     print(result.text)

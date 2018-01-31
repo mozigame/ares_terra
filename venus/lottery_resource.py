@@ -10,7 +10,7 @@ path = {
 
 # 修复未执行开奖流程的订单
 def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
-    pc = PathConfig(path_name='repair_no_draw_orders', path=path)
+    pc = PathConfig(path_name='repair_no_draw_orders', path=path, Config=Config)
     params = pc.get_param()
     data = {params[0]: pcode, params[1]: code, params[2]: pdate, params[3]: lottery_id, params[4]: page,
             params[5]: size}
