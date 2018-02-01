@@ -78,6 +78,22 @@ def exe_keys(match_key):
     print('keys size : ', len(keys))
 
 
+def get_keys(key):
+    redis_obj = get_cluster_conn()
+    value =redis_obj.get(key)
+    
+    print('key :', key)
+   
+    print('value : ', value)
+
+
+def set_keys(key,value):
+    redis_obj = get_cluster_conn()
+    value =redis_obj.set(key,value,3000)
+    
+    print('key :', key)
+   
+    print('value : ', value)
 print(os.getcwd())
 
 exe_keys('v_c_chase_lock_*2018011*')
