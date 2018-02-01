@@ -90,6 +90,11 @@ class PathConfig():
         return self.path[self.path_name][2]
 
 
+# 返回毫秒时间戳
+def datetime_timestamp_ms(dt):
+    return datetime_timestamp(dt) * 1000
+
+
 def datetime_timestamp(dt):
     # dt为字符串
     # 中间过程，一般都需要将字符串转化为时间数组

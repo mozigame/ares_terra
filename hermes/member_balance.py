@@ -18,5 +18,10 @@ def charge_order(member_id=None, plat_info_id=None, order_id=None, ac_type=1, am
 if __name__ == '__main__':
     get_token('plat')
     Config.env = 'local'
-    result = charge_order(member_id=178497, plat_info_id=38, order_id='210ap20181015v565nqe', amount=200)
-    print(result.text)
+    defStartTime = time.time() * 1000
+    for i in range(0, 1000):
+        startTime = time.time() * 1000
+        result = charge_order(member_id=178497, plat_info_id=38, order_id='210ap20181015v5%snqe' % i, amount=20)
+        print(i, '\n', result.text)
+        print("expend time : %f" % (time.time() * 1000 - startTime))
+    print("all expend time : %f" % (time.time() * 1000 - defStartTime))

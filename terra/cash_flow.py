@@ -1,8 +1,6 @@
 from terra.config import *
 from utils.request_util import *
 
-url = ''
-
 path = {
     'get_es_by_id': ['/api/es/cash_flow/get', ('id',), 'get', '获取金流基础信息,es',
                      'UserResource'],
