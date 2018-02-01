@@ -17,6 +17,7 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
     return RequestServer(pc, data).request()
 
 
+# 110 : bc_lhc
 # 108 ： bc_pk10
 # 106 : bc_k3
 # 102 ： bc_ssc
@@ -26,7 +27,7 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
 # 24 : luckship
 # 10 : xg_lhc
 if __name__ == '__main__':
-    Config.env='local'
+    Config.env = 'local'
     # token = PathConfig().get_token(requests)
     # print('Bearer', token)
     result = repair_no_draw_orders(2018112, 'xg_lhc', 201804, 10, 1, 200)

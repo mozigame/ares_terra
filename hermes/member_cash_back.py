@@ -13,7 +13,7 @@ path = {
 
 # 每日执行一次，将每个用户每个彩种的返水统计入库
 def agent_r_com_day_stat(pdate):
-    pc = PathConfig(path_name='agent_r_com_day_stat', path=path)
+    pc = PathConfig(path_name='agent_r_com_day_stat', path=path, Config=Config)
     params = pc.get_param()
     data = {params[0]: pdate}
     return RequestServer(pc, data).request()
@@ -21,7 +21,7 @@ def agent_r_com_day_stat(pdate):
 
 # 手动执行返水，给用户金额
 def grant_balance(date):
-    pc = PathConfig(path_name='grant_balance', path=path)
+    pc = PathConfig(path_name='grant_balance', path=path, Config=Config)
     params = pc.get_param()
     # 时间为年月日时分秒
     data = {params[0]: date}
