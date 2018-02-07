@@ -38,7 +38,7 @@ def batch_get_hbase_by_id(ids):
 
 if __name__ == '__main__':
     # 获取用户信息
-    ids = ['20180201182519', '20180201182620']
+    ids = ['20180202022228', '20180202022230']
     result = batch_get_hbase_by_id(ids)
     # print(result.json())
     # 添加用户信息

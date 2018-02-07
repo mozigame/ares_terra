@@ -102,8 +102,8 @@ if __name__ == '__main__':
     #
     # result = agent_r_com_day_stat(datetime_timestamp('2018-01-23 00:00:00') * 1000,
     #                               datetime_timestamp('2018-01-23 23:59:59') * 1000)
-    # result = agent_r_com_day_stat(datetime_timestamp('2018-01-24 00:00:00') * 1000,
-    #                               datetime_timestamp('2018-01-24 23:59:59') * 1000)
+    result = agent_r_com_day_stat(datetime_timestamp('2018-01-24 00:00:00') * 1000,
+                                  datetime_timestamp('2018-01-24 23:59:59') * 1000)
 
     # 代理月结账单列表，代理显示
     # result = month_bill_list()
@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
     # result = stat_list()
     # 资金管理，退佣当期报表
-    result = current_pcode_summary()
+    # result = current_pcode_summary()
     # 退佣状态修改
     # result = update_status()
     # print(result.json())

@@ -17,11 +17,11 @@ def charge_order(member_id=None, plat_info_id=None, order_id=None, ac_type=1, am
 
 if __name__ == '__main__':
     get_token('plat')
-    Config.env = 'local'
+    # Config.env = 'test'
     defStartTime = time.time() * 1000
     for i in range(0, 1000):
         startTime = time.time() * 1000
-        result = charge_order(member_id=178497, plat_info_id=38, order_id='210ap20181015v5%snqe' % i, amount=20)
+        result = charge_order(member_id=178497, plat_info_id=38, order_id='210ap20181015v2%snqe' % i, amount=20)
         print(i, '\n', result.text)
         print("expend time : %f" % (time.time() * 1000 - startTime))
-    print("all expend time : %f" % (time.time() * 1000 - defStartTime))
+        print("all expend time : %f" % (time.time() * 1000 - defStartTime))
