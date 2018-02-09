@@ -52,7 +52,7 @@ def member_backwater_stats(memberAccount=None, lotteryIds=None, platInfoId=None,
 
 if __name__ == '__main__':
     get_token('plat')
-    Config.env = 'local'
+    # Config.env = 'local'
     # result=plat_backwater_stats()
     # result=agent_backwater_stats(platInfoId=38)
     result = member_backwater_stats(platInfoId=38, agentId=2192)

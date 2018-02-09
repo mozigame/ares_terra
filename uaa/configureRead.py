@@ -13,10 +13,10 @@ runType = 'dev'
 
 def getConfig(type, name):
     path = os.getcwd()
-    path = path[0:path.find('ares_terra')] + 'ares_terra' + '\\uaa'
+    path = path[0:path.find('ares_terra')] + 'ares_terra%suaa' % os.sep
     cf = configparser.ConfigParser()
     if 'dev' != runType:
-        cf.read(path + "\\conf\\prod\\api.conf")
+        cf.read(path + format("{}conf{}prod{}api.conf").format(os.sep, os.sep, os.sep))
     else:
-        cf.read(path + "\\conf\\dev\\api.conf")
+        cf.read(path + format("{}conf{}dev{}api.conf").format(os.sep, os.sep, os.sep))
     return cf.get(type, name)
