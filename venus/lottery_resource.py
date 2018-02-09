@@ -16,22 +16,42 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
             params[5]: size}
     return RequestServer(pc, data).request()
 
-
-# 110 : bc_lhc
-# 108 ： bc_pk10
-# 106 : bc_k3
-# 102 ： bc_ssc
-# 8 ： bj_pk10
-# 16： gd_11x5
-# 2 : cq_ssc
-# 24 : luckship
-# 10 : xg_lhc
-# 4  :  jx_11x5
-# 104 : bc_11x5
+'''
+1	cq_ssc
+2	cq_ssc
+3	jx_11x5
+4	jx_11x5
+5	js_k3
+6	js_k3
+7	bj_pk10
+8	bj_pk10
+9	lhc
+10	xg_lhc
+11	tj_ssc
+12	tj_ssc
+13	xj_ssc
+14	xj_ssc
+15	gd_11x5
+16	gd_11x5
+17	sd_11x5
+18	sd_11x5
+19	ah_k3
+20	ah_k3
+21	hub_k3
+22	hub_k3
+24	luckship
+101	bc_ssc
+102	bc_ssc
+103	bc_11x5
+104	bc_11x5
+105	bc_k3
+106	bc_k3
+107	bc_pk10
+108	bc_pk10
+110	bc_lhc
+'''
 if __name__ == '__main__':
-    # Config.env = 'local'
-    # token = PathConfig().get_token(requests)
-    # print('Bearer', token)
+    Config.env = 'test'
     get_token('plat')
-    result = repair_no_draw_orders(20180205043, 'luckship', 20180205, 24, 1, 200)
+    result = repair_no_draw_orders(201802070906, 'bc_k3', 20180207, 106, 1, 200)
     print(result.text)
