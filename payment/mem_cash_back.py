@@ -59,14 +59,16 @@ if __name__ == '__main__':
     get_token('plat')
     Config.env = 'test'
     # 会员返水记录
-    # result = record(start_time=1516809600000, end_time=1516895999000, type=1, account='Ctuiyong02')
+    result = record(cash_back_id='20180126014001818',   start_time=1516809600000, end_time=1516895999000, type=1, account='Ctuiyong02',
+                    )
     # print(result.text)
     # 会员返水管理返水明细
-    # result = details(account='tuiyongA', type=2)
+    # result = details(account=None, type=2)
     # print(result.text)
 
-    # result = statistics_mem(start_time=1516723200000, end_time=1516809600000, lottery_ids='2')
+    # result = statistics_mem( startTime=datetime_timestamp_ms('2017-11-01 00:00:00'), endTime=1516809600000,
+    #                         lotteryIds='2')
     # print(result.text)
 
-    result = master_statistics_mem(platInfoId=38, startTime=1516723200000, endTime=1516809600000, lotteryIds='2')
+    # result = master_statistics_mem(platInfoId=38, startTime=1516723200000, endTime=1516809600000, lotteryIds='2')
     print(result.text)

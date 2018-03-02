@@ -32,7 +32,7 @@ def member_withhold_detail(platInfoId=None, memberName=None, agentName=None, sta
 
 if __name__ == '__main__':
     get_token('plat')
-    Config.env='local'
+    Config.env='test'
     # result = plat_withhold_stats(platAccount='xq_double', startTime=datetime_timestamp_ms('2018-02-01 00:00:00'), endTime=datetime_timestamp_ms('2018-02-07 23:59:59'))
     result = member_withhold_detail(platInfoId=38)
     print(result.text)

@@ -16,18 +16,19 @@ path = {
 }
 
 
-# 退佣状态修改
+# 获取当前token的用户信息
 def current_user():
     pc = PathConfig(path_name='current_user', path=path)
     return RequestServer(pc, None).request()
 
 
 if __name__ == '__main__':
-    configureRead.runType = 'dev'  # dev/prod
+    configureRead.runType = 'prod'  # dev/prod
     print('---runType=' + configureRead.runType)
     # 获取当前token用户的信息
 
-    result = get_token('control')  # loginModel=member/agent/plat/control
+    result = get_token('plat')  # loginModel=member/agent/plat/control
+    print(result.text)
     # print(result.text)
     result = current_user()
     print(result.text)

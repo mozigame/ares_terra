@@ -4,7 +4,6 @@ import time
 
 import redis
 from rediscluster import StrictRedisCluster
-
 from com.bc.cp.common.mars_constant import MarsConstant
 from com.bc.cp.util.properties_util import PropertiesLoad
 
@@ -15,7 +14,6 @@ def get_conn():
     pool = redis.ConnectionPool(host=pro_config[MarsConstant.REDIS_HOST], port=int(pro_config[MarsConstant.REDIS_PORT]),
                                 decode_responses=True)  # host是redis主机，需要redis服务端和客户端都起着 redis默认端口是6379
     r = redis.Redis(connection_pool=pool)
-
     # r = redis.StrictRedis(host=pro_config[MarsConstant.REDIS_HOST], port=int(pro_config[MarsConstant.REDIS_PORT]))
     return r
 
@@ -31,11 +29,9 @@ def get_cluster_conn():
         for h in hosts:
             node = h.split(":")
             redis_nodes.append({'host': node[0], 'port': node[1]})
-
         # pool = redis.ConnectionPool(host=pro_config[MarsConstant.REDIS_HOST],
         #                                 port=int(pro_config[MarsConstant.REDIS_PORT]),
         #                                 decode_responses=True)  # host是redis主机，需要redis服务端和客户端都起着 redis默认端口是6379
-
         redis_conn = StrictRedisCluster(startup_nodes=redis_nodes, decode_responses=True)
         return redis_conn
     except Exception as e:
@@ -49,7 +45,6 @@ def exe_del_redis_keys():
     start_time = time.time()
     for key in keys:
         redis_obj.delete(key)
-
     print('expendTime : ', (time.time() - start_time))
 
 
@@ -80,20 +75,18 @@ def exe_keys(match_key):
 
 def get_keys(key):
     redis_obj = get_cluster_conn()
-    value =redis_obj.get(key)
-    
+    value = redis_obj.get(key)
     print('key :', key)
-   
     print('value : ', value)
 
 
-def set_keys(key,value):
+def set_keys(key, value):
     redis_obj = get_cluster_conn()
-    value =redis_obj.set(key,value,3000)
-    
+    value = redis_obj.set(key, value, 3000)
     print('key :', key)
-   
     print('value : ', value)
+
+
 print(os.getcwd())
 
 exe_keys('v_c_chase_lock_*2018011*')

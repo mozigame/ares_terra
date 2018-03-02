@@ -1,7 +1,5 @@
-import requests
-from utils.request_util import *
-from time import sleep
 from terra.config import *
+from utils.request_util import *
 
 url = ''
 

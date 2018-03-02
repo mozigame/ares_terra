@@ -179,3 +179,11 @@ Desktop.ini
 ######################
 .eslintcache
 
+qr/img/out_img/*
+qr/img/cp/b/*
+qr/img/bc/b/*
+qr/img/cp/g/*
+qr/img/bc/g/*
+qr/img/cp/normal/*
+qr/img/bc/normal/*
+uaa/qr/img/*
