@@ -1,10 +1,11 @@
 import os
 import pymysql
 from com.bc.cp.util.properties_util import PropertiesLoad
+from constains import getRootPath
 
 
 def __get_conn_config():
-    mysql_pro_obj = PropertiesLoad(os.getcwd() + "/", "mysql.properties")
+    mysql_pro_obj = PropertiesLoad(getRootPath() + "com/config/dev/", "mysql.properties")
     return mysql_pro_obj.get_properties()
 
 

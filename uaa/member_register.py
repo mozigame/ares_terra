@@ -20,6 +20,8 @@ path = {
         'acType', "appid", "curType", "referrals", "login", "method", "oddType", "password", "realName", "mobile",
         'passwordPay', "bankId", "code", "bankCode", "bankAddress", "bankCard", "source"), 'post',
                       '创建账号', 'CurrentUserResource'],
+    'member_login': ['/apid/member/login', ('grant_type', "username", "password", "code", "source",), 'post',
+                     '会员登录', 'CurrentUserResource'],
 }
 
 aresCons = AresTerraCons()
@@ -181,8 +183,29 @@ def create_member_core(i):
         regist_suc_file.close()
 
 
-def member_login():
+def member_login(appid=None, account=None):
     """会员登录"""
+    if not appid:
+        appid = aresCons.getDefaultAppId()
+    password = get_password(account)
+    vcode = cp_qr.get_current_code()
+    if not vcode[0] or not vcode[1]:
+        raise Exception('--> code is null')
+    params = {'grant_type': AresTerraCons.GRANT_TYPE, 'username': appid + "|" + account, "password": password,
+              'code': vcode[1], 'source': AresTerraCons.SOURCE}
+    headers = {'Origin': aresCons.getDefaultOrigin(),
+               "Content-Type": 'application/x-www-form-urlencoded; charset=UTF-8',
+               'Authorization': 'Basic d2ViX2FwcDo=',
+               'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Mobile Safari/537.36',
+               'clientId': vcode[0], 'x-forwarded-for': AresTerraCons.X_FORWARDED_FOR,
+               'Proxy-Client-IP': AresTerraCons.PROXY_CLIENT_IP,
+               'WL-Proxy-Client-IP': AresTerraCons.WL_PROXY_CLIENT_IP}
+    pc = request_util.PathConfig(Config=Config, path_name='member_login', path=path)
+    # print(json.dumps(params))
+    # params = str(params).replace("'",'"')
+    result = request_util.RequestServer(pc, params ). \
+        request(self_headers=headers)
+    return result
 
 
 def urllib_create_mem(proxy_ip=None):
@@ -201,7 +224,8 @@ def urllib_create_mem(proxy_ip=None):
     headers = {'Origin': aresCons.getDefaultOrigin(), "Content-Type": 'application/json;charset=UTF-8',
                'Authorization': 'Basic d2ViX2FwcDo=', 'User-Agent': 'Chrome/64.0.3282.167',
                'clientId': clientId}
-    params = {'acType': "1", 'appid': aresCons.getDefaultAppId(), 'curType': "CNY", 'referrals': "", 'login': account,
+    params = {'acType': "1", 'appid': aresCons.getDefaultAppId(), 'curType': "CNY", 'referrals': "",
+              'login': account,
               'method': "mc",
               'oddType': "a", 'password': "11111", 'realName': real_name, 'mobile': mobile,
               'passwordPay': "1111", 'code': code, 'source': "2", 'origin': aresCons.getDefaultOrigin()}
@@ -225,5 +249,11 @@ def urllib_create_mem(proxy_ip=None):
 if __name__ == '__main__':
     Config.env = 'prod'
     aresCons = AresTerraCons(env=Config.env)
+    """批量创建会员"""
     create_member_core(1)
     # urllib_create_mem()
+    # result = member_login(account='48MED6uIE').json()
+    # if result['err']=='SUCCESS':
+    #     print(result['data']['access_token'])
+    # print(result)
+

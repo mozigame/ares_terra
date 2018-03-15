@@ -7,7 +7,7 @@ def get_all_data():
         print('--> get mysql conn failed!')
         return
     cursor = conn.cursor()
-    sql = 'select id,name from tab1'
+    sql = 'select *  from lp_news'
     cursor.execute(sql)
     result = cursor.fetchall()
     print(str(result))

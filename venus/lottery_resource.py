@@ -51,7 +51,15 @@ def repair_no_draw_orders(pcode, code, pdate, lottery_id, page, size):
 110	bc_lhc
 '''
 if __name__ == '__main__':
-    Config.env = 'prod'
+    # Config.env = 'prod'
     get_token('plat')
-    result = repair_no_draw_orders(201802070906, 'bc_k3', 20180207, 106, 1, 200)
+    # result = repair_no_draw_orders(20180307061, 'gd_11x5', 20180307, 16, 1, 200)
+    # result = repair_no_draw_orders(201803071143, 'bc_k3', 20180307, 106, 1, 200)
+    # result = repair_no_draw_orders(201803071143, 'bc_ssc', 20180307, 102, 1, 200)
+    # result = repair_no_draw_orders(20180307120, 'bj_pk10', 20180307, 8, 1, 200)
+    # result = repair_no_draw_orders(20180307079, 'cq_ssc', 20180307, 2, 1, 200)
+    # result = repair_no_draw_orders(201803070229, 'bc_lhc', 20180307, 110, 1, 200)
+    result = repair_no_draw_orders(20180307120, 'bj_pk10', 20180307, 8, 1, 200)
     print(result.text)
+
+

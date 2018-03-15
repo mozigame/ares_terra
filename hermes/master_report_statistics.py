@@ -3,7 +3,7 @@ from utils.request_util import *
 
 path = {
     'master_statics_plat_list': ['/apis/master/report/statics/plat/list',
-                                 ('platAccount', 'lotteryId', 'playIds', 'source', 'startTime', 'endTime'), 'get',
+                                 ('platAccount', 'lotteryIds', 'playIds', 'source', 'startTime', 'endTime'), 'get',
                                  '主控平台商统计报表', 'MasterReportStatisticsResource'],
     'master_statics_member_list': ['/apis/master/report/statics/member/list',
                                    ('memberAccount', 'agentAccount', 'platAccount', 'lotteryId', 'playIds', 'source',
@@ -21,9 +21,10 @@ source
 
 
 # 主控平台商统计报表
-def master_statics_plat_list(platAccount=None, lotteryId=None, playIds=None, source=None, startTime=None, endTime=None):
+def master_statics_plat_list(platAccount=None, lotteryIds=None, playIds=None, source=None, startTime=None,
+                             endTime=None):
     pc = PathConfig(path_name='master_statics_plat_list', path=path, Config=Config)
-    data = {'platAccount': platAccount, 'lotteryId': lotteryId, 'playIds': playIds, 'source': source,
+    data = {'platAccount': platAccount, 'lotteryIds': lotteryIds, 'playIds': playIds, 'source': source,
             'startTime': startTime, 'endTime': endTime}
     return RequestServer(pc, data).request()
 
@@ -40,11 +41,13 @@ def master_statics_member_list(memberAccount=None, agentAccount=None, platAccoun
 
 
 if __name__ == '__main__':
+    AresTerraCons.ENV = ENV.PROD
     get_token('plat')
-    Config.env = 'prod'
-    result = master_statics_plat_list(platAccount='test', playIds=[62102],
-                                      startTime=datetime_timestamp_ms('2018-01-01 00:00:00'),
-                                      endTime=datetime_timestamp_ms('2018-02-22 00:00:00'))
+    result = master_statics_plat_list(#platAccount='test', playIds=[62102],
+                                      # lotteryIds=[2,4],
+                                      startTime=datetime_timestamp_ms('2018-02-01 00:00:00'),
+                                      endTime=datetime_timestamp_ms('2018-03-22 00:00:00')
+    )
     # result = master_statics_member_list(platAccount='xq_double',playIds=[62102], startTime=datetime_timestamp_ms('2018-01-01 00:00:00'),
     #                               endTime=datetime_timestamp_ms('2018-02-22 00:00:00'))
     print(result.text)

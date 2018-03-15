@@ -1,7 +1,7 @@
 import requests
 import time
 from uaa import configureRead
-
+from constains import AresTerraCons,ENV
 
 class RequestServer():
     _Authorization = ''
@@ -11,21 +11,22 @@ class RequestServer():
         self.data = data
 
     def request(self, self_headers=None, self_proxies=None):
-        if RequestServer._Authorization=='' or RequestServer._Authorization is None:
-            RequestServer._Authorization='Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjAwNjQ4NDEsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI1NWM4MDRlNC0wNTkwLTQxZWUtOGM1Yi03ZTdiYTg1M2Q2M2YiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.WOOrcX2SbjmaDzt4Zrk0hV-JxqvPOZLAohyGvIoPR06mfdv01at76VDRsqP6hXZeMFT5jmzNNELrZ5Ucxh7Rd1fXzbnOd-RTEnSZWqp9kr2WLA7-0_N0kq3it7AZX6jyeQdtRMbzOz5yofyP8fvzXOOLECjsIRtTKWXtuE3SzWaFkJhrQu910jpAkpw7bEVyBa5tYsrUx0_MQGPW_sQxnRNfw3GodU7p2j3KPm9MZTP-H0VKFHuP_QPYhHhqz0em_FqJZfB5Mu7EAMtv_2613JNbdNM8UqPHoVpsu7heoSP33R_crU2Hd5OGf_gbrvpYHXkaa-R9nGePRK2z1RXF0w'
-        headers = {'Authorization': RequestServer._Authorization}
+        aresCons = AresTerraCons(AresTerraCons.ENV)
+        # if RequestServer._Authorization=='' or RequestServer._Authorization is None:
+        #     RequestServer._Authorization='Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjAwNjQ4NDEsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHRlc3QyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI1NWM4MDRlNC0wNTkwLTQxZWUtOGM1Yi03ZTdiYTg1M2Q2M2YiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.WOOrcX2SbjmaDzt4Zrk0hV-JxqvPOZLAohyGvIoPR06mfdv01at76VDRsqP6hXZeMFT5jmzNNELrZ5Ucxh7Rd1fXzbnOd-RTEnSZWqp9kr2WLA7-0_N0kq3it7AZX6jyeQdtRMbzOz5yofyP8fvzXOOLECjsIRtTKWXtuE3SzWaFkJhrQu910jpAkpw7bEVyBa5tYsrUx0_MQGPW_sQxnRNfw3GodU7p2j3KPm9MZTP-H0VKFHuP_QPYhHhqz0em_FqJZfB5Mu7EAMtv_2613JNbdNM8UqPHoVpsu7heoSP33R_crU2Hd5OGf_gbrvpYHXkaa-R9nGePRK2z1RXF0w'
+        headers = {'Authorization': RequestServer._Authorization, "Origin":aresCons.getDefaultOrigin()}
         if self_headers:
             headers = dict(headers, **self_headers)
         # print('login_model='+login_model+' Origin='+self_headers['Origin'])
         # print(headers)
         result = {}
-        print("--> request : {}, method : {}, params :{}".format(self.pc.get_path(), self.pc.get_method(), self.data))
+        print("--> request : {}, method : {}, params :{}, headers:{}".format(self.pc.get_path(), self.pc.get_method(), self.data, headers))
         if self.pc.get_method() == 'get':
             result = requests.get(url=self.pc.get_path(), params=self.data, headers=headers, proxies=self_proxies,
-                                  timeout=25)
+                                  timeout=50)
         elif self.pc.get_method() == 'post':
             result = requests.post(self.pc.get_path(), data=self.data, headers=headers, proxies=self_proxies,
-                                   timeout=25)
+                                   timeout=50)
         else:
             raise Exception('未指定请求方法')
         return result
@@ -83,9 +84,9 @@ class PathConfig():
     def __init__(self, Config=None, path_name='', path=None):
         if not path:
             raise Exception('no path')
-        if Config.env == 'test':
+        if AresTerraCons.ENV == ENV.TEST:
             self.host = Config.test_host
-        elif Config.env == 'prod':
+        elif AresTerraCons.ENV == ENV.PROD:
             self.host = Config.prod_host
         else:
             print('--> 默认为local环境')
@@ -120,3 +121,18 @@ def datetime_timestamp(dt):
 
 def timestamp_datestr():
     return time.strftime("%Y%m%d%H%M%S", time.localtime())
+
+
+# 获取格式化的时间到毫秒
+def get_time_stamp_str():
+    ct = time.time()
+    local_time = time.localtime(ct)
+    data_head = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
+    data_secs = (ct - int(ct)) * 1000
+    time_stamp = "%s.%03d" % (data_head, data_secs)
+    return time_stamp
+
+
+# 获取时间戳(毫秒)
+def get_time_stamp():
+    return int(round(time.time() * 1000))

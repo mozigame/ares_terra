@@ -33,10 +33,12 @@ if __name__ == '__main__':
     # print('Bearer', token)
     # 每日执行一次，将每个用户每个彩种的返水统计入库
     # for i in range(1, 10):
-    # result = agent_r_com_day_stat(20180124)
-    # print(result.text)
+    get_token("plat")
+
+    result = agent_r_com_day_stat(20180312)
+    print(result.text)
 
     # 手动执行返水，给用户金额
     # for i in range(1, 14):
-    result = grant_balance(int('%s010101' % (20180124)))
-    print(result.text)
+    # result = grant_balance(int('%s010101' % (20180124)))
+    # print(result.text)

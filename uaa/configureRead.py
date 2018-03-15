@@ -8,7 +8,7 @@ import configparser
 import os
 
 # local='online'
-runType = 'dev'
+runType = 'prod'
 
 configObj = None
 

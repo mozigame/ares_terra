@@ -1,4 +1,5 @@
 from  com.bc.cp.util.redis_util import *
+from lxml import etree
 import sys
 
 if __name__ == '__main__':
@@ -13,3 +14,6 @@ if __name__ == '__main__':
             print('use valid command')
     else:
         print('no redis match key')
+
+
+

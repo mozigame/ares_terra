@@ -4,6 +4,6 @@ import requests
 class Config():
     host = 'http://localhost:8081'
     # host = 'http://192.168.1.109:8083'
-    test_host = 'http://192.168.0.223:8080/forseti'
+    test_host = 'http://121.58.234.210:19093/forseti'
     prod_host = 'http://10.1.10.82:8081'
     env = 'test'
