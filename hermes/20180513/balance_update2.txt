@@ -1,0 +1,2600 @@
+E:\python_env\py_virtual\py_vir_3_6_3\Scripts\python.exe E:/work_project/python_pro/ares_terra/hermes/member_balance.py
+--> apiRoot : https://api.88bccp.com
+get token : {
+  "data" : {
+    "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw",
+    "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJQTEFUX3hxdGVzdHxhZGFtIiwic2NvcGUiOlsib3BlbmlkIl0sImF0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImV4cCI6MTUyODgwMzU2NCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QTEFURk9STSJdLCJqdGkiOiI5NGE5Mjc1ZS0yNjQ1LTQyY2MtYTc3OS1jZTRkM2Y3YTNiOGEiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIn0.N1cGc0TApknOqrLuC0T6wVbyGA6hbtJW-OYJoaMyNx2CS9MRH2SF98_A9iN5FkVYizfnIQgVJt3FQMGCCxqMBMVry5-cQpZJ1RN5TrcX5YFT2kkhsJtu5dxJMOHyhprN7EOEVyqPeGVpbmEImE1vFW1xftOneq-PpHQHPKjew0F58lZ-m2EULD6_I1EEnL2sNLuoslhonpsbi6LbbL2wlo5II3aYfnVbONFtqesLZewUSirRxklTjIyuE6SoyrWOq5IaR21IVEfzT3o9u1JNHMCekfmrqW8pP2BF2rPgkcpQag5C_q2OQWHDB5LKC-mwLu3Ezni_J8_1p9Va7BSHKQ",
+    "scope" : "openid",
+    "token_type" : "bearer",
+    "expires_in" : 86399,
+    "acType" : 4,
+    "jti" : "27afef4b-4f0b-4ad3-b970-50a9a46566d0",
+    "username" : "adam"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 58, 'memberId': 216177, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 216177,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 116,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211564624,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 250155, 'memberId': 943834, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 943834,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 740458,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211564976,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 521464, 'memberId': 1015240, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1015240,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 2136534,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211565308,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 3, 'memberId': 1359356, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1359356,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 6,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211565663,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 669273, 'memberId': 1534693, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1534693,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1338546,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211565995,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8764, 'memberId': 1535510, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1535510,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 22561,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211566341,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 539, 'memberId': 1558204, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1558204,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1038,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211566707,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 60525, 'memberId': 1727925, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1727925,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 130540,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211567046,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5652, 'memberId': 1783727, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1783727,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 15416,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211567427,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 51051, 'memberId': 1859258, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 1859258,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 55205,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211567793,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 60852, 'memberId': 2070752, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2070752,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 115896,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211568140,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 228668, 'memberId': 2092538, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2092538,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 675616,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211568499,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 2738, 'memberId': 2254893, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2254893,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 4880,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211568846,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 54780, 'memberId': 2321777, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2321777,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 54860,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211569204,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 38967, 'memberId': 2336081, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2336081,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 82373,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211569548,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8147, 'memberId': 2505193, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2505193,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 29138,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211569923,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5065, 'memberId': 2559707, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2559707,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 10130,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211570279,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4586, 'memberId': 2686613, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2686613,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 9172,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211570638,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 690, 'memberId': 2749726, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2749726,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1380,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211571447,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 6177, 'memberId': 2815198, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2815198,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 12354,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211571793,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 118384, 'memberId': 2855844, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2855844,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 118768,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211572214,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 369901, 'memberId': 2909987, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2909987,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 887582,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211572550,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 53070, 'memberId': 2961123, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2961123,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 53136,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211572928,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 15559, 'memberId': 2965366, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2965366,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 27458,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211573260,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1695, 'memberId': 3002379, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3002379,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 2066,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211573611,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 304998, 'memberId': 3190170, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3190170,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 370996,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211573971,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 34380, 'memberId': 3329283, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3329283,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 52420,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211574334,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 9509, 'memberId': 3364804, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3364804,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 21890,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211574694,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 26689, 'memberId': 3403662, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3403662,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 52370,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211575032,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1647, 'memberId': 3418877, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3418877,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1686,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211575422,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 20372, 'memberId': 3445436, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3445436,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 40744,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211575770,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8562, 'memberId': 3539798, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3539798,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 28824,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211576126,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 179679, 'memberId': 3563075, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3563075,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 381538,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211576529,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 406094, 'memberId': 3578373, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3578373,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 844188,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211576905,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 996, 'memberId': 3625792, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3625792,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1472,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211577264,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 246230, 'memberId': 3637747, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3637747,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 263560,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211577609,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 102159, 'memberId': 3681301, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3681301,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 245043,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211577948,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1623563, 'memberId': 3714018, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3714018,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 3398277,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211578303,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12022, 'memberId': 3854624, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3854624,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 61544,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211578637,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1956, 'memberId': 3856213, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3856213,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 3912,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211578998,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 670, 'memberId': 3896876, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3896876,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1969,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211579361,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 72, 'memberId': 3924391, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 3924391,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 144,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211579750,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5103, 'memberId': 4045795, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4045795,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 11182,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211580111,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7256333, 'memberId': 4076257, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4076257,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 14512666,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211580528,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 11824, 'memberId': 4092523, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4092523,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 23648,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211580894,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 450, 'memberId': 4152476, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4152476,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 900,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211581260,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 16505, 'memberId': 4168781, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4168781,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 97758,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211581593,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1309, 'memberId': 4170825, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4170825,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1340,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211581953,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1381, 'memberId': 4225201, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4225201,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 3318,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211582310,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 9895, 'memberId': 4284829, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4284829,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 19790,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211582660,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7374, 'memberId': 4352171, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4352171,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 13748,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211583047,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 22, 'memberId': 4408814, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4408814,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 14544,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211583400,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7794, 'memberId': 4438371, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4438371,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 16632,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211583794,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4640, 'memberId': 4495405, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4495405,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 9280,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211584149,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 6677, 'memberId': 4503151, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4503151,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 13354,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211584487,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4054, 'memberId': 4570849, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4570849,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 4119,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211584843,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 351, 'memberId': 4572413, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4572413,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1384,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211585196,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 50301, 'memberId': 4601066, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4601066,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 50602,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211585567,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 2728, 'memberId': 4637527, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4637527,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 5456,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211585899,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 17518, 'memberId': 4670661, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4670661,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 37836,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211586287,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 3262, 'memberId': 4697042, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4697042,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 8334,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211586644,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 421375, 'memberId': 4704400, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4704400,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 852430,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211586989,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7559, 'memberId': 4767375, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4767375,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 7582,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211587333,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8228, 'memberId': 4819235, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4819235,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 13020,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211587696,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 20201, 'memberId': 4825914, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4825914,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 40402,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211588053,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 702, 'memberId': 4831996, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4831996,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1404,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211588435,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 30151, 'memberId': 4834329, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4834329,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 68702,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211588798,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 115, 'memberId': 4842643, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4842643,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 230,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211589174,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 29381, 'memberId': 4848479, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4848479,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 58762,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211589587,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5606, 'memberId': 4887918, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4887918,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 11212,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211589976,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 78069, 'memberId': 4916537, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4916537,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 154338,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211590361,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 41918, 'memberId': 4943910, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4943910,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 62012,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211590717,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 39385, 'memberId': 4979598, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4979598,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 78770,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211591109,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 131264, 'memberId': 4997430, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 4997430,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 245508,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211591547,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 96, 'memberId': 5001539, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5001539,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 192,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211591930,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 9, 'memberId': 5001797, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5001797,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 18,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211592325,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 35326, 'memberId': 5067136, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5067136,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 35392,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211592691,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 28261, 'memberId': 5094543, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5094543,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 28454,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211593049,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 20004, 'memberId': 5242095, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5242095,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 40228,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211593441,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12354, 'memberId': 5333364, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5333364,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 23088,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211593798,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 0, 'memberId': 5386345, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5386345,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 0,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211594142,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 137086, 'memberId': 5391072, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5391072,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 137124,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211594510,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 15423, 'memberId': 5400530, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5400530,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 15610,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211594856,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 2940, 'memberId': 5412255, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5412255,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 2960,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211595225,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 3678, 'memberId': 5427069, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5427069,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 9256,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211595593,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7774, 'memberId': 5486947, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5486947,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 8645,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211595933,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 44400, 'memberId': 5490994, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5490994,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 45500,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211596295,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 1536, 'memberId': 5493805, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5493805,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 3072,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211596651,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 56, 'memberId': 5495012, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5495012,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 112,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211597027,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 78260, 'memberId': 5496097, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5496097,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 160580,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211597377,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 17548, 'memberId': 5500385, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5500385,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 35096,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211597730,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 98440, 'memberId': 5506916, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5506916,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 98480,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211598091,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5100, 'memberId': 5513705, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5513705,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 5180,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211598435,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 69606, 'memberId': 5515153, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5515153,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 237532,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211598799,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 3195232, 'memberId': 5533812, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5533812,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 6546164,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211599140,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 65580, 'memberId': 5550575, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5550575,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 124160,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211599505,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8820, 'memberId': 5568494, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5568494,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 15340,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211599876,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 3600, 'memberId': 5593802, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5593802,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 7200,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211600231,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4851, 'memberId': 5595423, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5595423,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 12166,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211600584,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 8878, 'memberId': 5599802, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5599802,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 11032,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211600954,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12249, 'memberId': 5601102, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5601102,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 24926,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211601311,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 509, 'memberId': 5624108, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5624108,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 1018,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211601675,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 59900, 'memberId': 5631566, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5631566,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 119800,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211602008,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12470, 'memberId': 5653878, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5653878,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 16940,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211602368,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 40104, 'memberId': 5663292, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5663292,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 80208,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211602714,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 25782, 'memberId': 5729324, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5729324,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 40864,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211603071,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 71084, 'memberId': 5764260, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5764260,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 92744,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211603466,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 90086, 'memberId': 5828736, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5828736,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 90172,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211603823,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 132, 'memberId': 5833148, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5833148,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 264,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211604185,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 26670, 'memberId': 5834656, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5834656,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 52300,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211604531,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 23156, 'memberId': 5834850, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5834850,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 46644,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211604897,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12031, 'memberId': 5837666, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5837666,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 24062,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211605239,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5900, 'memberId': 5860453, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5860453,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 29100,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211605603,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 36926, 'memberId': 5872527, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5872527,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 73852,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211605958,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5386, 'memberId': 5924814, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5924814,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 6188,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211606306,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 7212, 'memberId': 5946292, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5946292,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 7224,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211606686,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 149600, 'memberId': 5950674, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5950674,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 299200,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211607044,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4168, 'memberId': 5950831, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5950831,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 8336,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211607388,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4130, 'memberId': 5958344, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5958344,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 9780,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211607753,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 20910, 'memberId': 5961942, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5961942,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 28355,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211608097,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 70, 'memberId': 5973077, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5973077,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 140,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211608467,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 4340, 'memberId': 5974962, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5974962,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 4380,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211608833,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 5668, 'memberId': 5979486, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5979486,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 15948,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211609181,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 121, 'memberId': 5984330, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5984330,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 242,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211609523,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 35488, 'memberId': 5992722, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 5992722,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 70836,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211609875,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 11850, 'memberId': 6011671, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 6011671,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 23640,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211610263,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 101940, 'memberId': 6025756, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 6025756,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 178660,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211610606,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 0, 'memberId': 6037315, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 6037315,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 0,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211610959,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': 12967, 'memberId': 6038508, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjYyOTc5NjQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjI3YWZlZjRiLTRmMGItNGFkMy1iOTcwLTUwYTlhNDY1NjZkMCIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.qaK_ZxRdQRw77Qn6wHda1BmOXPnw_2KiwOL9FM6c_84iRgVJ-UctX0UFd5gUMXKpRW1_ZiJZbf7-K4GISR0B9G0oYXhbt9b8FvHebpdq_mKic2X6lpIUWHC-neuLrKNWPBleHVYgseqUX0PwW5piLg6ir9gnMhAKJ-CleefqPLwkxc-PqgqN-OzYvDxFUMhD_Y1pVmmEerZjFpygEGvIskLiWKglX1HISD2VKT514TYX3l9YCpaRX0caQ4qNlBuAdy_c8XH0bOmr0LM85xdt78B66t3tXDvRmfYoOh5Z650MHD0KTcDhi1S5OflhBPXLCy_HipP38CsenKesjdTNkw', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 6038508,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 13054,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526211611326,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+
+Process finished with exit code 0

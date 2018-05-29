@@ -1,0 +1,20 @@
+--> request : http://api.88bccp.com/hermes/apis/balance/increment, method : post, params :{'amount': -261595, 'memberId': 2909987, 'acType': '1', 'count': None}, headers:{'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjY0NDExMDQsInVzZXJfbmFtZSI6IlBMQVRfeHF0ZXN0fGFkYW0iLCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6ImEwNjUyMDk2LTRhOTAtNDlhOC1hMmNkLTgyMzNiZWZkOWFjNyIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzY29wZSI6WyJvcGVuaWQiXX0.IznKjQF6mD4E38dcFhl4FQlH88ro9sxWl96OKfecyk_7HuIldc_Ap71H1OUhXK3EpD1C7Krtf4-dtvU5bDWS5unKFe2trQ_3wooXCw8eBFvqOBx4EPSSC_3Qgrr_fiVDKFfxzFn7tnXI25O3p1jXUsB7dtpWQcTAOr6R79kl4gjTEek02odrrn5yJwZxSMYg1mO4uteXWP7vRVLkp-bZ4Izbf_KusJALUgHcyq_E5tBO_IZcfqdV9SZd_UCBJKKvK0ijl0KpINFDL6fO1RIRc_oTiwgy85CrjIqO7SGWJ0po66tb1R7tOxTqrPiMPRiRYJljmovF5CSpe6trIN9Wzg', 'Origin': 'http://7747bb.com'}
+{
+  "data" : {
+    "cid" : null,
+    "platInfoId" : null,
+    "memberId" : 2909987,
+    "agentId" : null,
+    "memberName" : null,
+    "acType" : 1,
+    "amount" : 28917,
+    "credit" : null,
+    "reforwardPoint" : null,
+    "modifyTime" : 1526354705484,
+    "createTime" : null,
+    "operUserId" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}

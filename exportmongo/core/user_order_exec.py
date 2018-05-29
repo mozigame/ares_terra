@@ -39,3 +39,5 @@ def start(pdate):
             raise Exception("--> execute hadoop sh error :: " + hadoop_sh)
     else:
         print("--> folder_count is 0 , don't execute hadoop sh , folder : " + order_path)
+
+

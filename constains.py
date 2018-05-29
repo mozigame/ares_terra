@@ -58,6 +58,11 @@ global_cons = {
         {'lotteryId': 26, 'issue': "ssc_beijing", 'acType': 2, 'lotteryName': "北京时时彩双面彩"},
         {'lotteryId': 27, 'issue': "ssc_taiwan", 'acType': 1, 'lotteryName': "台湾5分彩"},
         {'lotteryId': 28, 'issue': "ssc_taiwan", 'acType': 2, 'lotteryName': "台湾5分彩双面彩"},
+        {'lotteryId': 29, 'issue': "pc_dd", 'acType': 1, 'lotteryName': "PC蛋蛋"},
+        {'lotteryId': 30, 'issue': "pc_dd", 'acType': 2, 'lotteryName': "PC蛋蛋双面彩"},
+        {'lotteryId': 31, 'issue': "qq_ffc", 'acType': 1, 'lotteryName': "QQ分分彩"},
+        {'lotteryId': 32, 'issue': "qq_ffc", 'acType': 2, 'lotteryName': "QQ分分彩双面彩"},
+
         {'lotteryId': 101, 'issue': "bc_ssc", 'acType': 1, 'lotteryName': "秒速时时彩"},
         {'lotteryId': 102, 'issue': "bc_ssc", 'acType': 2, 'lotteryName': "秒速时时彩双面彩"},
         {'lotteryId': 103, 'issue': "bc_11x5", 'acType': 1, 'lotteryName': "秒速11选5"},
@@ -89,7 +94,7 @@ class AresTerraCons():
     DEFAULT_ADD_MEM_COUNT = 4
     GRANT_TYPE = 'password'
     SOURCE = '2'
-    ENV = ENV.TEST
+    ENV = ENV.PROD
 
     def __init__(self, env=None):
         if env:

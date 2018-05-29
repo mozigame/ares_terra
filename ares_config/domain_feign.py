@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # plat_ids = [60, 59, 38, 35, 68, 39, 61, 66, 71, 70, 69, 67, 65, 44, 48, 49, 58, 47, 40, 46, 43, 42, 41, 2, 10, 37,
     #             1]
     plat_ids = [54, 46, 48, 52, 50, 41, 45, 44, 35, 37, 42, 43, 40, 2, 38, 39, 10, 1]
-    print_strs=''
+    print_strs = ''
     for plat_id in plat_ids:
         result = plat_domains(plat_id)
         result = result.json()
@@ -28,11 +28,11 @@ if __name__ == '__main__':
             for plat_domain in result['data']:
                 # print(plat_id, result['data'])
                 if plat_domain['status'] == 1:
-                    print_str= '{}\t{}\t{}\t{}\t{}\n'.format(plat_domain['platId'], plat_domain['agentId'], plat_domain['domain'], plat_domain['type'],
-                          plat_domain['status'])
-                    print(plat_domain['platId'], plat_domain['agentId'], plat_domain['domain'], plat_domain['type'],
-                          plat_domain['status'],
-                          sep='\t')
-                    print_strs+=print_str
+                    print_str = '{}\t{}\t{}\t{}\t{}\n'.format(plat_domain['platId'], plat_domain['type'],
+                                                              plat_domain['status'], plat_domain['agentId'],
+                                                              plat_domain['domain'])
+                    print(plat_domain['platId'], plat_domain['type'], plat_domain['status'], plat_domain['agentId'],
+                          plat_domain['domain'], sep='\t')
+                    print_strs += print_str
     print("\n\n")
     print(print_strs)
